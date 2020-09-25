@@ -137,7 +137,17 @@ git remote -v
 
 3.创建远程库地址别名。命令：
 git remote add origin(别名) 远程库地址
-	ssh地址
+
+使用ssh地址
+	进入家目录 
+	cd ~
+	生成ssh
+	ssh-keygen -t rsa -C github账号邮箱
+	进入ssh目录
+	cd ~/.ssh
+	复制id_rsa.pub内容到github设置-->ssh key
+	cat id_rsa.pub
+	
 git remote add origin_ssh ssh远程库地址
 
 修改地址
